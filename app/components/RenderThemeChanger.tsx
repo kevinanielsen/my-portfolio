@@ -20,13 +20,15 @@ const RenderThemeChanger = () => {
 
   if (currentTheme === "dark") {
     return (
-      <button onClick={() => setTheme("light")}>
+      <button onClick={() => setTheme("light")} className="text-2xl">
+        <span className="sr-only">Switch to light theme</span>
         <BiSun size="1.25em" />
       </button>
     );
   } else {
     return (
-      <button onClick={() => setTheme("dark")}>
+      <button onClick={() => setTheme("dark")} className="text-2xl">
+        <span className="sr-only">Switch to dark theme</span>
         <BiMoon size="1.25em" />
       </button>
     );

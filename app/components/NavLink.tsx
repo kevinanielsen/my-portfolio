@@ -1,3 +1,5 @@
+import { Link, animateScroll as scroll } from "react-scroll";
+
 type NavLinkProps = {
   text: string;
   href: string;
@@ -5,10 +7,7 @@ type NavLinkProps = {
 
 const NavLink: React.FC<NavLinkProps> = ({ text, href }) => {
   return (
-    <a
-      href={href}
-      className="font-light text-center"
-    >
+    <a href={href} className="font-light text-center">
       {text}
     </a>
   );
