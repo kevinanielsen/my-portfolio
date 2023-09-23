@@ -1,4 +1,6 @@
-import { Link, animateScroll as scroll } from "react-scroll";
+"use client"
+
+import handleClickScroll from "@/actions/handleClickScroll";
 
 type NavLinkProps = {
   text: string;
@@ -7,9 +9,9 @@ type NavLinkProps = {
 
 const NavLink: React.FC<NavLinkProps> = ({ text, href }) => {
   return (
-    <a href={href} className="font-light text-center">
+    <button onClick={() => handleClickScroll(href)} className="font-light text-center">
       {text}
-    </a>
+    </button>
   );
 };
 
