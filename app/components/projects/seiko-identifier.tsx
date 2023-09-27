@@ -13,24 +13,29 @@ import Image from "next/image";
 
 const SeikoIdentifier: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-8 md:gap-0 justify-between items-center flex-wrap">
+    <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-0 justify-between items-center flex-wrap lg:flex-nowrap max-w-7xl w-full">
       <Image
-        src="/images/seiko-identifier-demo.png"
+        src="/images/seiko-identifier-demo-phone.png"
         alt="demo image"
-        width={250}
-        height={500}
+        width={500}
+        height={1000}
+        className="w-[250px]"
       />
+
       <div className="md:max-w-xl">
         <h3 className="text-xl font-bold">
           Seiko Identifier - Identify your Seiko wristwatch
         </h3>
         <p>
-          A database for Seiko wristwatches with a build-in identifying tool to get the exact model-number of your Seiko watch
+          A database for Seiko wristwatches with a build-in identifying tool to
+          get the exact model-number of your Seiko watch
         </p>
         <ul className="list-disc pl-4">
           <li>A well-trained AI-model to accurately identify your Seiko</li>
           <li>A long list of watches with well-written descriptions</li>
-          <li><b>Coming soon:</b> A like feature to save your favorite Seikos</li>
+          <li>
+            <b>Coming soon:</b> A like feature to save your favorite Seikos
+          </li>
         </ul>
         {/* Links & Technologies */}
         <ul className="flex justify-between items-center pt-8 md:max-w-xl">

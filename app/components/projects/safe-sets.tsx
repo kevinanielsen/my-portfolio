@@ -13,9 +13,9 @@ import Image from "next/image";
 
 const SafeSets: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-8 md:gap-0 justify-between items-center flex-wrap">
+    <div className="flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between items-center flex-wrap lg:flex-nowrap max-w-7xl w-full">
       {/* 1st Section */}
-      <div className="md:max-w-md">
+      <div className="md:max-w-xl">
         <h3 className="text-xl font-bold">
           Safe Sets - A complete workout tracker
         </h3>
@@ -75,8 +75,9 @@ const SafeSets: React.FC = () => {
       <Image
         src="/images/safe-sets-demo-phone.png"
         alt="demo image"
-        width={250}
-        height={500}
+        width={500}
+        height={1000}
+        className="w-[250px]"
       />
     </div>
   );

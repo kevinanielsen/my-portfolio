@@ -13,13 +13,14 @@ const Projects = () => {
             flex
             flex-col
             gap-4
+            items-center
           "
     >
       <h2 className="text-4xl font-bold">Projects</h2>
       <Shurtle />
-      <div className="border border-b-2 border-b-main my-4" />
+      <div className="border-b-4 border-b-dark my-4 w-full" />
       <SeikoIdentifier />
-      <div className="border border-b-2 border-b-main my-4" />
+      <div className="border-b-4 border-b-dark my-4 w-full" />
       <SafeSets />
     </section>
   );

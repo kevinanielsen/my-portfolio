@@ -17,8 +17,10 @@ const TechStack = () => {
             flex
             flex-col
             gap-4
+            items-center
           "
     >
+      <div className="max-w-7xl gap-4 flex flex-col p-8 w-full">
       <h2 className="text-4xl font-bold">My Stack</h2>
       <ul
         className="
@@ -53,6 +55,7 @@ const TechStack = () => {
         on frontend development, however, I also love working on the backend and
         working with tools like MongoDB, Express.js, Prisma, and many more.
       </p>
+      </div>
     </section>
   );
 };
