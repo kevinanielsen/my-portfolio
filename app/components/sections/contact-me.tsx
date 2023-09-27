@@ -61,8 +61,8 @@ const ContactMe = () => {
               className="
                   font-bold
                   p-2
-                  text-lightest
                   bg-main
+                  dark:text-dark
                   rounded-md
                   text-lg
                 "

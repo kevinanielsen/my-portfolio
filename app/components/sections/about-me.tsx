@@ -44,8 +44,8 @@ const AboutMe = () => {
           className="
                 font-bold
                 p-2
-                text-lightest
                 bg-main
+                dark:text-dark
                 w-fit
                 rounded-md
                 text-lg
