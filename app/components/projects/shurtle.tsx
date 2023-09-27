@@ -18,16 +18,11 @@ const Shurtle: React.FC = () => {
         <h3 className="text-xl font-bold">
           Shurtle - The simple and modern URL-shortener
         </h3>
-        <p>
-          A database for Seiko wristwatches with a build-in identifying tool to
-          get the exact model-number of your Seiko watch
-        </p>
+        <p>An easy to use and fast tool for shortening long links.</p>
         <ul className="list-disc pl-4">
-          <li>A well-trained AI-model to accurately identify your Seiko</li>
-          <li>A long list of watches with well-written descriptions</li>
-          <li>
-            <b>Coming soon:</b> A like feature to save your favorite Seikos
-          </li>
+          <li>A minimalistic and fast user interface</li>
+          <li>Multiple language support</li>
+          <li>Fast response time</li>
         </ul>
         {/* Links & Technologies */}
         <ul className="flex justify-between items-center pt-8">
