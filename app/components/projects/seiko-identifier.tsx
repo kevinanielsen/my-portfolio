@@ -70,14 +70,14 @@ const SeikoIdentifier: React.FC = () => {
           </TechLink>
           <TechLink span="ML5.js" href="https://ml5js.org/">
             <Image
-              src="/icons/ml5-logo-white.png"
+              src="/icons/ml5/ml5-logo-white.png"
               width={48}
               height={48}
               alt="ML5"
               className="dark:block hidden"
             />
             <Image
-              src="/icons/ml5-logo-dark.png"
+              src="/icons/ml5/ml5-logo-dark.png"
               width={48}
               height={48}
               alt="ML5"
