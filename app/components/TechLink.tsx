@@ -5,15 +5,24 @@ interface TechLinkProps {
   href: string;
   offset?: string;
   children: React.ReactNode;
+  hide?: boolean;
 }
 
-const TechLink: React.FC<TechLinkProps> = ({ span, href, offset, children }) => {
+const TechLink: React.FC<TechLinkProps> = ({
+  span,
+  href,
+  offset,
+  hide,
+  children,
+}) => {
   return (
-    <li>
+    <li className={`${hide && "hidden md:flex"}`}>
       <Link
         href={href}
         target="_blank"
-        className={`focus:outline-2 focus:outline-main focus:outline-offset-[${offset ? offset : '12'}px] rounded-full`}
+        className={`focus:outline-2 focus:outline-main focus:outline-offset-[${
+          offset ? offset : "12"
+        }px] rounded-full `}
         aria-label={span}
       >
         <span className="sr-only">{span}</span>
