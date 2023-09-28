@@ -5,10 +5,11 @@ import {
   SiReact,
   SiTypescript,
 } from "react-icons/si";
-import TechLink from "../TechLink";
+import TechLink from "@/components/TechLink";
 import { BiLinkExternal } from "react-icons/bi";
 import { RxDividerVertical } from "react-icons/rx";
 import Image from "next/image";
+import ProjectLinks from "@/components/project-links";
 
 const Shurtle: React.FC = () => {
   return (
@@ -25,24 +26,10 @@ const Shurtle: React.FC = () => {
           <li>Fast response time</li>
         </ul>
         {/* Links & Technologies */}
-        <ul className="flex justify-between items-center pt-8">
-          <TechLink
-            span="Github"
-            href="https://github.com/kevinanielsen/shurtle"
-            offset="10"
-          >
-            <SiGithub size={40} />
-          </TechLink>
-          <TechLink
-            span="Live demo"
-            href="https://app.shurtle.site/"
-            offset="10"
-          >
-            <BiLinkExternal size={40} />
-          </TechLink>
-          <li>
-            <RxDividerVertical size={48} />
-          </li>
+        <ProjectLinks
+          githubLink="https://github.com/kevinanielsen/shurtle"
+          demoLink="https://app.shurtle.site/"
+        >
           <TechLink span="React.js" href="https://react.dev/">
             <SiReact size={40} />
           </TechLink>
@@ -63,7 +50,7 @@ const Shurtle: React.FC = () => {
               alt="ML5"
             />
           </TechLink>
-        </ul>
+        </ProjectLinks>
       </div>
 
       <Image
