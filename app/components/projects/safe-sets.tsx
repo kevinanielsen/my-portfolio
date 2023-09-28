@@ -1,14 +1,11 @@
 import {
   SiCypress,
-  SiGithub,
   SiReact,
   SiReactrouter,
   SiTailwindcss,
   SiVite,
 } from "react-icons/si";
 import TechLink from "../TechLink";
-import { BiLinkExternal } from "react-icons/bi";
-import { RxDividerVertical } from "react-icons/rx";
 import Image from "next/image";
 import ProjectLinks from "../project-links";
 
