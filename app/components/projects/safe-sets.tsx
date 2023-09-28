@@ -10,6 +10,7 @@ import TechLink from "../TechLink";
 import { BiLinkExternal } from "react-icons/bi";
 import { RxDividerVertical } from "react-icons/rx";
 import Image from "next/image";
+import ProjectLinks from "../project-links";
 
 const SafeSets: React.FC = () => {
   return (
@@ -29,48 +30,38 @@ const SafeSets: React.FC = () => {
           <li>Full history of all your workouts.</li>
         </ul>
         {/* Links & Technologies */}
-        <ul className="flex justify-between items-center pt-8">
-          <TechLink
-            span="Github"
-            href="https://github.com/kevinanielsen/safe-sets"
-            offset="10"
-          >
-            <SiGithub size={40} />
-          </TechLink>
-          <TechLink
-            span="Live demo"
-            href="https://safe-sets.netlify.app/"
-            offset="10"
-          >
-            <BiLinkExternal size={40} />
-          </TechLink>
-          <li>
-            <RxDividerVertical size={48} />
-          </li>
-          <TechLink span="React.js" href="https://react.dev/">
-            <SiReact size={40} />
-          </TechLink>
-          <TechLink
-            span="TailwindCSS"
-            href="https://tailwindcss.com/"
-            offset="10"
-          >
-            <SiTailwindcss size={40} />
-          </TechLink>
-          <TechLink span="Vite" href="https://vitejs.dev/" offset="10">
-            <SiVite size={40} />
-          </TechLink>
-          <TechLink span="Cypress" href="https://www.cypress.io/" offset="10">
-            <SiCypress size={40} />
-          </TechLink>
-          <TechLink
-            span="React Router"
-            href="https://reactrouter.com/"
-            offset="10"
-          >
-            <SiReactrouter size={40} />
-          </TechLink>
-        </ul>
+        <ProjectLinks
+          demoLink="https://safe-sets.netlify.app/"
+          githubLink="https://github.com/kevinanielsen/safe-sets"
+        >
+              <TechLink span="React.js" href="https://react.dev/">
+                <SiReact size={40} />
+              </TechLink>
+              <TechLink
+                span="TailwindCSS"
+                href="https://tailwindcss.com/"
+                offset="10"
+              >
+                <SiTailwindcss size={40} />
+              </TechLink>
+              <TechLink span="Vite" href="https://vitejs.dev/" offset="10">
+                <SiVite size={40} />
+              </TechLink>
+              <TechLink
+                span="Cypress"
+                href="https://www.cypress.io/"
+                offset="10"
+              >
+                <SiCypress size={40} />
+              </TechLink>
+              <TechLink
+                span="React Router"
+                href="https://reactrouter.com/"
+                offset="10"
+              >
+                <SiReactrouter size={40} />
+              </TechLink>
+        </ProjectLinks>
       </div>
       <Image
         src="/images/safe-sets-demo-phone.png"
