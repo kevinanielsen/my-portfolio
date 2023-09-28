@@ -1,16 +1,12 @@
 import {
-  SiDaisyui,
-  SiGithub,
   SiNextdotjs,
   SiPrisma,
   SiReact,
   SiTypescript,
 } from "react-icons/si";
 import TechLink from "../TechLink";
-import { BiLinkExternal } from "react-icons/bi";
-import { RxDividerVertical } from "react-icons/rx";
 import Image from "next/image";
-import ProjectLinks from "../project-links";
+import ProjectLinks from "@/components/project-links";
 
 const SeikoIdentifier: React.FC = () => {
   return (
