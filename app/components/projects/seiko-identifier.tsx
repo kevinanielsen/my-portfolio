@@ -10,6 +10,7 @@ import TechLink from "../TechLink";
 import { BiLinkExternal } from "react-icons/bi";
 import { RxDividerVertical } from "react-icons/rx";
 import Image from "next/image";
+import ProjectLinks from "../project-links";
 
 const SeikoIdentifier: React.FC = () => {
   return (
@@ -38,24 +39,10 @@ const SeikoIdentifier: React.FC = () => {
           </li>
         </ul>
         {/* Links & Technologies */}
-        <ul className="flex justify-between items-center pt-8 md:max-w-xl">
-          <TechLink
-            span="Github"
-            href="https://github.com/kevinanielsen/seiko-identifier"
-            offset="10"
-          >
-            <SiGithub size={40} />
-          </TechLink>
-          <TechLink
-            span="Live demo"
-            href="https://seiko-identifier.vercel.app/"
-            offset="10"
-          >
-            <BiLinkExternal size={40} />
-          </TechLink>
-          <li>
-            <RxDividerVertical size={48} />
-          </li>
+        <ProjectLinks
+          githubLink="https://github.com/kevinanielsen/seiko-identifier"
+          demoLink="https://seiko-identifier.vercel.app/"
+        >
           <TechLink span="NextJS" href="https://nextjs.org/" offset="10">
             <SiNextdotjs size={40} />
           </TechLink>
@@ -84,7 +71,7 @@ const SeikoIdentifier: React.FC = () => {
               className="block dark:hidden"
             />
           </TechLink>
-        </ul>
+        </ProjectLinks>
       </div>
     </div>
   );
