@@ -6,8 +6,6 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import TechLink from "@/components/TechLink";
-import { BiLinkExternal } from "react-icons/bi";
-import { RxDividerVertical } from "react-icons/rx";
 import Image from "next/image";
 import ProjectLinks from "@/components/project-links";
 
