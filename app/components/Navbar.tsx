@@ -1,5 +1,7 @@
 import NavLink from "@/components/NavLink";
 import RenderThemeChanger from "@/components/RenderThemeChanger";
+import Link from "next/link";
+import { BiLogoGithub, BiLogoLinkedinSquare } from "react-icons/bi";
 
 const Navbar = () => {
   return (
@@ -10,7 +12,11 @@ const Navbar = () => {
         <NavLink href="projects" text="Projects" />
         <NavLink href="contact" text="Contact" />  
       </div>
-      <RenderThemeChanger />
+      <div className="flex gap-2">
+        <Link href="https://linkedin.com/in/kevinanielsen" aria-label="Linkedin" target="_blank"><BiLogoLinkedinSquare size="40" /></Link>
+        <Link href="https://github.com/kevinanielsen" aria-label="Github" target="_blank"><BiLogoGithub size="40" /></Link>
+        <RenderThemeChanger />
+      </div>
     </nav>
   );
 };
