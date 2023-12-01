@@ -1,12 +1,15 @@
+"use client";
+import handleClickScroll from "@/actions/handleClickScroll";
+
 const AboutMe = () => {
   return (
     <section
       id="about"
       className="
-            bg-lightest
-            dark:bg-darkLight
-            flex flex-col items-center
-          "
+        bg-lightest
+        dark:bg-darkLight
+        flex flex-col items-center
+      "
     >
       <div className="max-w-7xl gap-4 flex flex-col p-8">
         <h2 className="text-4xl font-bold">About Me</h2>
@@ -39,20 +42,35 @@ const AboutMe = () => {
           creating beautiful, functional, and user-friendly websites and web
           applications, I'd love to hear from you!
         </p>
-        <a
-          href="#contact"
-          className="
-                font-bold
-                p-2
-                bg-main
-                dark:text-dark
-                w-fit
-                rounded-md
-                text-lg
-              "
-        >
-          Contact
-        </a>
+        <div className="flex gap-2">
+          <button
+            onClick={() => handleClickScroll("contact")}
+            className="
+            font-bold
+            p-2
+            bg-main
+            w-fit
+            rounded-md
+            text-lg
+          "
+          >
+            Contact
+          </button>
+          <a
+            target="_blank"
+            href="/resume.pdf"
+            className="
+            font-bold
+            p-2
+            bg-main
+            w-fit
+            rounded-md
+            text-lg
+          "
+          >
+            Resume
+          </a>
+        </div>
       </div>
     </section>
   );
