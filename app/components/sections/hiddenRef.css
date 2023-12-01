@@ -1,0 +1,19 @@
+#hidden-ref {
+  animation: hidden;
+  animation-duration: 5000ms;
+}
+
+@keyframes hidden {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  95% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}

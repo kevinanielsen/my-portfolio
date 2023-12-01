@@ -1,7 +1,17 @@
 "use client";
 import handleClickScroll from "@/actions/handleClickScroll";
+import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 const AboutMe = () => {
+  const linkRef = useRef<HTMLAnchorElement>(null);
+
+  useEffect(() => {
+    if (linkRef.current) {
+      linkRef.current.hidden = true;
+    }
+  });
+
   return (
     <section
       id="about"
@@ -43,7 +53,9 @@ const AboutMe = () => {
           applications, I'd love to hear from you!
         </p>
         <div className="flex gap-2">
-          <button
+          <motion.button
+            whileHover={{ scale: 1.2 }}
+            transition={{ type: "spring", stiffness: 300 }}
             onClick={() => handleClickScroll("contact")}
             className="
             font-bold
@@ -55,8 +67,9 @@ const AboutMe = () => {
           "
           >
             Contact
-          </button>
+          </motion.button>
           <a
+            ref={linkRef}
             target="_blank"
             href="/resume.pdf"
             className="
@@ -70,6 +83,22 @@ const AboutMe = () => {
           >
             Resume
           </a>
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            target="_blank"
+            href="/resume.pdf"
+            className="
+            font-bold
+            p-2
+            bg-main
+            w-fit
+            rounded-md
+            text-lg
+          "
+          >
+            Resume
+          </motion.a>
         </div>
       </div>
     </section>
