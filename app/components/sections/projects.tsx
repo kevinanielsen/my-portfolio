@@ -18,9 +18,7 @@ const Projects = () => {
     >
       <h2 className="text-4xl font-bold">Projects</h2>
       <Shurtle />
-      <div className="border-b-4 border-b-dark my-4 w-full" />
       <SeikoIdentifier />
-      <div className="border-b-4 border-b-dark my-4 w-full" />
       <SafeSets />
     </section>
   );
