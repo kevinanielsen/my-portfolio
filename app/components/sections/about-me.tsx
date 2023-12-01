@@ -1,17 +1,8 @@
 "use client";
 import handleClickScroll from "@/actions/handleClickScroll";
 import { motion } from "framer-motion";
-import { useEffect, useRef } from "react";
 
 const AboutMe = () => {
-  const linkRef = useRef<HTMLAnchorElement>(null);
-
-  useEffect(() => {
-    if (linkRef.current) {
-      linkRef.current.hidden = true;
-    }
-  });
-
   return (
     <section
       id="about"
@@ -68,21 +59,6 @@ const AboutMe = () => {
           >
             Contact
           </motion.button>
-          <a
-            ref={linkRef}
-            target="_blank"
-            href="/resume.pdf"
-            className="
-            font-bold
-            p-2
-            bg-main
-            w-fit
-            rounded-md
-            text-lg
-          "
-          >
-            Resume
-          </a>
           <motion.a
             whileHover={{ scale: 1.2 }}
             transition={{ type: "spring", stiffness: 300 }}
