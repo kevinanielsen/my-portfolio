@@ -43,9 +43,12 @@ const AboutMe = () => {
           creating beautiful, functional, and user-friendly websites and web
           applications, I'd love to hear from you!
         </p>
-        <div className="flex gap-2">
+        <div className="flex gap-4">
           <motion.button
-            whileHover={{ scale: 1.2 }}
+            whileHover={{
+              scale: 1.2,
+              rotateZ: 10 - Math.round(Math.random() * 15 + 5),
+            }}
             transition={{ type: "spring", stiffness: 300 }}
             onClick={() => handleClickScroll("contact")}
             className="
@@ -60,10 +63,13 @@ const AboutMe = () => {
             Contact
           </motion.button>
           <motion.a
-            whileHover={{ scale: 1.2 }}
+            whileHover={{
+              scale: 1.2,
+              rotateZ: 10 - Math.round(Math.random() * 15 + 5),
+            }}
             transition={{ type: "spring", stiffness: 300 }}
             target="_blank"
-            href="/resume.pdf"
+            href="/resume"
             className="
             font-bold
             p-2
