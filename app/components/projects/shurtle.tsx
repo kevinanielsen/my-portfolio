@@ -1,10 +1,4 @@
-import {
-  SiExpress,
-  SiGithub,
-  SiMongodb,
-  SiReact,
-  SiTypescript,
-} from "react-icons/si";
+import { SiExpress, SiMongodb, SiReact, SiTypescript } from "react-icons/si";
 import TechLink from "@/components/TechLink";
 import Image from "next/image";
 import ProjectLinks from "@/components/project-links";
