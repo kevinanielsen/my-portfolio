@@ -22,7 +22,7 @@ const ProjectLinks: React.FC<ProjectLinksProps> = ({
         <Link href={demoLink}>Live Demo</Link>
         <Link href={githubLink}>Github Repo</Link>
       </div>
-      <ul className="flex justify-between items-center">
+      <ul className="flex items-center gap-4">
         <TechLink span="Github" href={githubLink} offset="10" hide>
           <SiGithub size={40} />
         </TechLink>

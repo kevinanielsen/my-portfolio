@@ -2,6 +2,7 @@ import {
   SiNextdotjs,
   SiPrisma,
   SiReact,
+  SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
 import TechLink from "../TechLink";
@@ -51,21 +52,8 @@ const SeikoIdentifier: React.FC = () => {
           <TechLink span="Prisma" href="https://prisma.io/">
             <SiPrisma size={40} />
           </TechLink>
-          <TechLink span="ML5.js" href="https://ml5js.org/">
-            <Image
-              src="/icons/ml5/ml5-logo-white.png"
-              width={48}
-              height={48}
-              alt="ML5"
-              className="dark:block hidden"
-            />
-            <Image
-              src="/icons/ml5/ml5-logo-dark.png"
-              width={48}
-              height={48}
-              alt="ML5"
-              className="block dark:hidden"
-            />
+          <TechLink span="TailwindCSS" href="https://tailwindcss.com/">
+            <SiTailwindcss size={40} />
           </TechLink>
         </ProjectLinks>
       </div>
