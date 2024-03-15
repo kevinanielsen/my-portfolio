@@ -1,7 +1,7 @@
-import SafeSets from "@/components/projects/safe-sets";
-import SeikoIdentifier from "@/components/projects/seiko-identifier";
-import Shurtle from "@/components/projects/shurtle";
-import GoFastCDN from "@/components/projects/go-fast-cdn";
+import SafeSets from '@/components/projects/safe-sets'
+import SeikoIdentifier from '@/components/projects/seiko-identifier'
+import Shurtle from '@/components/projects/shurtle'
+import GoFastCDN from '@/components/projects/go-fast-cdn'
 
 const Projects = () => {
   return (
@@ -23,7 +23,7 @@ const Projects = () => {
       <SeikoIdentifier />
       <SafeSets />
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

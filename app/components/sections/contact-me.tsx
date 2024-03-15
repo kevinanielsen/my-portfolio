@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { BiLogoGithub, BiLogoLinkedinSquare } from "react-icons/bi";
-import { MdEmail, MdLocationOn } from "react-icons/md";
+import Link from 'next/link'
+import { BiLogoGithub, BiLogoLinkedinSquare } from 'react-icons/bi'
+import { MdEmail, MdLocationOn } from 'react-icons/md'
 
 const ContactMe = () => {
   return (
@@ -45,7 +45,7 @@ const ContactMe = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ContactMe;
+export default ContactMe

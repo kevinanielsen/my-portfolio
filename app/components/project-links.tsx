@@ -1,20 +1,20 @@
-import { ReactNode } from "react";
-import TechLink from "@/components/TechLink";
-import { SiGithub } from "react-icons/si";
-import { BiLinkExternal } from "react-icons/bi";
-import { RxDividerVertical } from "react-icons/rx";
-import Link from "next/link";
+import { ReactNode } from 'react'
+import TechLink from '@/components/TechLink'
+import { SiGithub } from 'react-icons/si'
+import { BiLinkExternal } from 'react-icons/bi'
+import { RxDividerVertical } from 'react-icons/rx'
+import Link from 'next/link'
 
 interface ProjectLinksProps {
-  children: ReactNode | string;
-  demoLink: string;
-  githubLink: string;
+  children: ReactNode | string
+  demoLink: string
+  githubLink: string
 }
 
 const ProjectLinks: React.FC<ProjectLinksProps> = ({
   children,
   demoLink,
-  githubLink,
+  githubLink
 }) => {
   return (
     <div className="flex flex-col gap-8 pt-4">
@@ -33,7 +33,7 @@ const ProjectLinks: React.FC<ProjectLinksProps> = ({
         {children}
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default ProjectLinks;
+export default ProjectLinks

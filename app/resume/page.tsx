@@ -11,7 +11,7 @@ const Resume = () => {
         Unable to display PDF file. <a href="/Resume.pdf">Download</a> instead.
       </p>
     </object>
-  );
-};
+  )
+}
 
-export default Resume;
+export default Resume

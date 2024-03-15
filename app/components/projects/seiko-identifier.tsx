@@ -3,11 +3,11 @@ import {
   SiPrisma,
   SiReact,
   SiTailwindcss,
-  SiTypescript,
-} from "react-icons/si";
-import TechLink from "../TechLink";
-import Image from "next/image";
-import ProjectLinks from "@/components/project-links";
+  SiTypescript
+} from 'react-icons/si'
+import TechLink from '../TechLink'
+import Image from 'next/image'
+import ProjectLinks from '@/components/project-links'
 
 const SeikoIdentifier: React.FC = () => {
   return (
@@ -58,7 +58,7 @@ const SeikoIdentifier: React.FC = () => {
         </ProjectLinks>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SeikoIdentifier;
+export default SeikoIdentifier

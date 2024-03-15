@@ -1,12 +1,12 @@
-import { SiReact, SiSqlite, SiTailwindcss, SiVite } from "react-icons/si";
-import TechLink from "../TechLink";
-import Image from "next/image";
-import ProjectLinks from "../project-links";
-import { BiLogoGoLang } from "react-icons/bi";
+import { SiReact, SiSqlite, SiTailwindcss, SiVite } from 'react-icons/si'
+import TechLink from '../TechLink'
+import Image from 'next/image'
+import ProjectLinks from '../project-links'
+import { BiLogoGoLang } from 'react-icons/bi'
 
 const GoFastCDN: React.FC = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between items-center flex-wrap lg:flex-nowrap max-w-7xl w-full">
+    <div className="flex w-full max-w-7xl flex-col flex-wrap items-center justify-between gap-8 lg:flex-row lg:flex-nowrap lg:gap-0">
       {/* 1st Section */}
       <Image
         src="/images/go-fast-cdn-demo.png"
@@ -26,11 +26,11 @@ const GoFastCDN: React.FC = () => {
         </p>
         <ul className="list-disc pl-4">
           <li>
-            Great documentation written with{" "}
+            Great documentation written with{' '}
             <a className="text-sky-500 underline" href="https://astro.build/">
               Astro
-            </a>{" "}
-            and{" "}
+            </a>{' '}
+            and{' '}
             <a
               className="text-sky-500 underline"
               href="https://starlight.astro.build/"
@@ -39,13 +39,7 @@ const GoFastCDN: React.FC = () => {
             </a>
             .
           </li>
-          <li>
-            OpenAPI 3.0 documentation with{" "}
-            <a className="text-sky-500 underline" href="https://stoplight.io/">
-              Stoplight
-            </a>
-            .
-          </li>
+          <li>OpenAPI 3.0 documentation.</li>
           <li>A clean and minimalistic user interface.</li>
         </ul>
         {/* Links & Technologies */}
@@ -71,7 +65,7 @@ const GoFastCDN: React.FC = () => {
         </ProjectLinks>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default GoFastCDN;
+export default GoFastCDN

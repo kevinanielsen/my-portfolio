@@ -5,32 +5,33 @@ import {
   SiTailwindcss,
   SiReact,
   SiCypress,
-} from "react-icons/si";
-import TechLink from "../TechLink";
+  SiVuedotjs
+} from 'react-icons/si'
+import TechLink from '../TechLink'
 
 const TechStack = () => {
   return (
     <section
       id="my_stack"
       className="
-            p-8
             flex
             flex-col
-            gap-4
             items-center
+            gap-4
+            p-8
           "
     >
-      <div className="max-w-7xl gap-4 flex flex-col pt-8 w-full">
+      <div className="flex w-full max-w-7xl flex-col gap-4 pt-8">
         <h2 className="text-4xl font-bold">My Stack</h2>
-        <div className="w-full grid justify-center items-center">
+        <div className="grid w-full items-center justify-center">
           <ul
             className="
-                flex 
-                justify-between 
-                items-center 
-                pt-2
+                flex
                 flex-wrap
+                items-center
+                justify-between
                 gap-4
+                pt-2
                 md:gap-8
               "
           >
@@ -46,8 +47,8 @@ const TechStack = () => {
             <TechLink span="React.js" href="https://react.dev/">
               <SiReact size={48} />
             </TechLink>
-            <TechLink span="Cypress" href="https://www.cypress.io/">
-              <SiCypress size={48} />
+            <TechLink span="Vue" href="https://vuejs.org/">
+              <SiVuedotjs size={48} />
             </TechLink>
             <TechLink span="TailwindCSS" href="https://tailwindcss.com/">
               <SiTailwindcss size={48} />
@@ -63,7 +64,7 @@ const TechStack = () => {
         </p>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default TechStack;
+export default TechStack

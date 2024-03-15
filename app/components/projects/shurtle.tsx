@@ -3,11 +3,11 @@ import {
   SiMongodb,
   SiReact,
   SiTailwindcss,
-  SiTypescript,
-} from "react-icons/si";
-import TechLink from "@/components/TechLink";
-import Image from "next/image";
-import ProjectLinks from "@/components/project-links";
+  SiTypescript
+} from 'react-icons/si'
+import TechLink from '@/components/TechLink'
+import Image from 'next/image'
+import ProjectLinks from '@/components/project-links'
 
 const Shurtle: React.FC = () => {
   return (
@@ -54,7 +54,7 @@ const Shurtle: React.FC = () => {
         className="w-[250px]"
       />
     </div>
-  );
-};
+  )
+}
 
-export default Shurtle;
+export default Shurtle

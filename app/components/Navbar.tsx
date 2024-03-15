@@ -1,22 +1,22 @@
-"use client";
+'use client'
 
-import NavLink from "@/components/NavLink";
-import RenderThemeChanger from "@/components/RenderThemeChanger";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { BiLogoGithub, BiLogoLinkedinSquare } from "react-icons/bi";
-import { MdEmail } from "react-icons/md";
+import NavLink from '@/components/NavLink'
+import RenderThemeChanger from '@/components/RenderThemeChanger'
+import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { BiLogoGithub, BiLogoLinkedinSquare } from 'react-icons/bi'
+import { MdEmail } from 'react-icons/md'
 
 const Navbar = () => {
   return (
     <>
       <nav className="flex justify-between items-center w-full p-8">
         <motion.h3
-          initial={{ y: "-30px", opacity: 0 }}
-          animate={{ y: "0", opacity: 1 }}
+          initial={{ y: '-30px', opacity: 0 }}
+          animate={{ y: '0', opacity: 1 }}
           className="text-dark dark:text-lightest font-bold text-4xl"
         >
-          {"<KN />"}
+          {'<KN />'}
         </motion.h3>
         <motion.div className="gap-12 text-2xl hidden sm:flex">
           <motion.div
@@ -93,7 +93,7 @@ const Navbar = () => {
       <noscript>
         <nav className="flex justify-between items-center w-full p-8">
           <h3 className="text-dark dark:text-lightest font-bold text-4xl">
-            {"<KN />"}
+            {'<KN />'}
           </h3>
           <div className="gap-12 text-2xl hidden sm:flex">
             <NavLink href="about" text="About" />
@@ -127,7 +127,7 @@ const Navbar = () => {
         </nav>
       </noscript>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
