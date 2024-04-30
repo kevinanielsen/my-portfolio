@@ -4,7 +4,6 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiReact,
-  SiCypress,
   SiVuedotjs
 } from 'react-icons/si'
 import TechLink from '../TechLink'
