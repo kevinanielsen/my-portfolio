@@ -1,7 +1,13 @@
-import { SiExpress, SiMongodb, SiReact, SiTypescript } from "react-icons/si";
-import TechLink from "@/components/TechLink";
-import Image from "next/image";
-import ProjectLinks from "@/components/project-links";
+import {
+  SiExpress,
+  SiMongodb,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript
+} from 'react-icons/si'
+import TechLink from '@/components/TechLink'
+import Image from 'next/image'
+import ProjectLinks from '@/components/project-links'
 
 const Shurtle: React.FC = () => {
   return (
@@ -34,13 +40,8 @@ const Shurtle: React.FC = () => {
           <TechLink span="ExpressJS" href="https://mongodb.com/">
             <SiExpress size={40} />
           </TechLink>
-          <TechLink span="Shadcn/ui" href="https://ui.shadcn.com/">
-            <Image
-              src="/icons/shadcn/ui-original.png"
-              width={48}
-              height={48}
-              alt="ML5"
-            />
+          <TechLink span="TailwindCSS" href="https://tailwindcss.com/">
+            <SiTailwindcss size={40} />
           </TechLink>
         </ProjectLinks>
       </div>
@@ -53,7 +54,7 @@ const Shurtle: React.FC = () => {
         className="w-[250px]"
       />
     </div>
-  );
-};
+  )
+}
 
-export default Shurtle;
+export default Shurtle

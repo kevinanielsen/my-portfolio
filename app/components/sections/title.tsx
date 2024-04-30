@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
-import { motion } from "framer-motion";
-import "./hiddenRef.css";
+'use client'
+import { motion } from 'framer-motion'
+import './hiddenRef.css'
 
 const Title = () => {
   return (
@@ -42,7 +42,7 @@ const Title = () => {
       <motion.div
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 80, opacity: 1 }}
-        transition={{ type: "spring", stiffness: 200, delay: 2 }}
+        transition={{ type: 'spring', stiffness: 200, delay: 2 }}
         className="relative top-24"
       >
         <h2
@@ -71,7 +71,7 @@ const Title = () => {
         className="relative -z-10 dark:opacity-10"
       />
     </section>
-  );
-};
+  )
+}
 
-export default Title;
+export default Title

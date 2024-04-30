@@ -1,6 +1,6 @@
-"use client";
-import handleClickScroll from "@/actions/handleClickScroll";
-import { motion } from "framer-motion";
+'use client'
+import handleClickScroll from '@/actions/handleClickScroll'
+import { motion } from 'framer-motion'
 
 const AboutMe = () => {
   return (
@@ -47,10 +47,10 @@ const AboutMe = () => {
           <motion.button
             whileHover={{
               scale: 1.2,
-              rotateZ: 10 - Math.round(Math.random() * 15 + 5),
+              rotateZ: 10 - Math.round(Math.random() * 15 + 5)
             }}
-            transition={{ type: "spring", stiffness: 300 }}
-            onClick={() => handleClickScroll("contact")}
+            transition={{ type: 'spring', stiffness: 300 }}
+            onClick={() => handleClickScroll('contact')}
             className="
             font-bold
             p-2
@@ -65,9 +65,9 @@ const AboutMe = () => {
           <motion.a
             whileHover={{
               scale: 1.2,
-              rotateZ: 10 - Math.round(Math.random() * 15 + 5),
+              rotateZ: 10 - Math.round(Math.random() * 15 + 5)
             }}
-            transition={{ type: "spring", stiffness: 300 }}
+            transition={{ type: 'spring', stiffness: 300 }}
             target="_blank"
             href="/resume"
             className="
@@ -84,7 +84,7 @@ const AboutMe = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default AboutMe;
+export default AboutMe

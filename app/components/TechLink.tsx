@@ -1,11 +1,11 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 interface TechLinkProps {
-  span: string;
-  href: string;
-  offset?: string;
-  children: React.ReactNode;
-  hide?: boolean;
+  span: string
+  href: string
+  offset?: string
+  children: React.ReactNode
+  hide?: boolean
 }
 
 const TechLink: React.FC<TechLinkProps> = ({
@@ -13,15 +13,15 @@ const TechLink: React.FC<TechLinkProps> = ({
   href,
   offset,
   hide,
-  children,
+  children
 }) => {
   return (
-    <li className={`${hide && "hidden md:flex"}`}>
+    <li className={`${hide && 'hidden md:flex'}`}>
       <Link
         href={href}
         target="_blank"
         className={`focus:outline-2 focus:outline-main focus:outline-offset-[${
-          offset ? offset : "12"
+          offset ? offset : '12'
         }px] rounded-full `}
         aria-label={span}
       >
@@ -29,7 +29,7 @@ const TechLink: React.FC<TechLinkProps> = ({
         {children}
       </Link>
     </li>
-  );
-};
+  )
+}
 
-export default TechLink;
+export default TechLink

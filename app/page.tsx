@@ -25,7 +25,7 @@ const Home = () => {
         <ContactMe />
       </main>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
