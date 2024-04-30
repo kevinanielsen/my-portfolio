@@ -44,7 +44,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <script defer data-domain="kevinanielsen.com" src="https://plausible.io/js/script.js"></script>
+      </head>
       <body className={inter.className}>
         <Toaster />
         <Providers>{children}</Providers>
