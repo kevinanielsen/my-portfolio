@@ -6,16 +6,17 @@ import { BiLogoGoLang } from 'react-icons/bi'
 
 const GoFastCDN: React.FC = () => {
   return (
-    <div className="flex w-full max-w-7xl flex-col flex-wrap items-center justify-between gap-8 lg:flex-row lg:flex-nowrap lg:gap-0">
+    <div className="flex w-full flex-col flex-wrap items-center justify-between gap-8 lg:flex-row lg:flex-nowrap lg:gap-0">
       {/* 1st Section */}
-      <Image
-        src="/images/go-fast-cdn-demo.png"
-        alt="demo image"
-        width={1000}
-        height={500}
-        className="w-2/5"
-      />
-      <div className="md:max-w-xl">
+      <div className="lg:w-2/5 w-full h-64 relative flex-shrink-0 pr-4">
+        <Image
+          src="/images/go-fast-cdn-demo.png"
+          alt="demo image"
+          layout="fill"
+          objectFit="contain"
+        />
+      </div>
+      <div className="md:max-w-xl lg:w-1/2">
         <h3 className="text-xl font-bold">
           Go-Fast CDN - An easy-to-use, fast, and simple CDN
         </h3>

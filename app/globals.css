@@ -6,4 +6,7 @@
   body {
     @apply text-dark dark:bg-dark dark:text-lightest;
   }
+  section {
+    @apply flex flex-col items-center gap-4;
+  }
 }
