@@ -4,7 +4,7 @@ import { MdEmail, MdLocationOn } from 'react-icons/md'
 
 const ContactMe = () => {
   return (
-    <section id="contact" className="p-8 flex flex-col gap-4 items-center">
+    <section id="contact">
       <div className="max-w-7xl gap-4 flex flex-col p-8 w-full text-center">
         <h2 className="font-bold text-3xl">Contact Info</h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
