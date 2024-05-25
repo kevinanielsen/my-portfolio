@@ -11,7 +11,7 @@ import { Section } from '../section'
 
 const TechStack = () => {
   return (
-    <Section dark>
+    <Section id="tech-stack" dark>
       <h2 className="text-4xl font-bold">My Stack</h2>
       <div className="grid w-full items-center justify-center">
         <ul

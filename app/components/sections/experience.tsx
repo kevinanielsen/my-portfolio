@@ -11,7 +11,7 @@ import { Section } from '../section'
 
 const Experience: React.FC = () => {
   return (
-    <Section dark>
+    <Section id="experience" dark>
       <h2 className="text-4xl font-bold mb-8">Experience</h2>
       <div className="flex gap-4 flex-col">
         <div className="flex flex-col gap-8 items-center justify-evenly">

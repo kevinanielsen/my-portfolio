@@ -6,7 +6,7 @@ import { Section } from '../section'
 
 const Projects = () => {
   return (
-    <Section>
+    <Section id="projects">
       <h2 className="text-4xl font-bold">Projects</h2>
       <GoFastCDN />
       <Shurtle />

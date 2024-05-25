@@ -5,7 +5,7 @@ import { Section } from '../section'
 
 const AboutMe = () => {
   return (
-    <Section>
+    <Section id="about">
       <h2 className="text-4xl font-bold mb-8">About Me</h2>
       <p>
         Hello, I&apos;m Kevin - a self-taught front-end web developer with a
